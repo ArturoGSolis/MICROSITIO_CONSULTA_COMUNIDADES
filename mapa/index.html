@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/map.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/data.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+    <script src="./tlaxcala_map.js"></script>
+</head>
+
+<body>
+
+    <div id="mapa"></div>
+    <div></div>
+
+    <div class="lista_municipios">
+        <div class="card">
+            <div class="card-header">Atltzayanca</div>
+            <div class="card-body">
+                <ul class="ps-3 list-unstyled">
+                    <li>Delicias</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">Atlangatepec</div>
+            <div class="card-body">
+                <ul class="ps-3 list-unstyled">
+                    <li>Santa María Tepetzala</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">Calpulalpan</div>
+            <div class="card-body">
+                <ul class="ps-3 list-unstyled">
+                    <li>Santa Isabel Mixtitlán</li>
+                    <li>La Venta</li>
+                    <li>San Antonio Mazapa</li>
+                    <li>Gustavo Díaz Ordaz</li>
+                    <li>La Soledad</li>
+                    <li>Santiago Cuaula</li>
+                    <li>San Felipe Sultepec</li>
+                    <li>San Marcos Guaquilpan</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">Chiautempan</div>
+            <div class="card-body">
+                <ul class="ps-3 list-unstyled">
+                    <li>Santa Cruz Tetela</li>
+                    <li>San Pedro Tlalcuapan</li>
+                    <li>San Pedro Muñoztla</li>
+                    <li>San Pedro Xochiteotla</li>
+                    <li>San Rafael Tepatlaxco</li>
+                    <li>Colonia Tepetlapa</li>
+                    <li>San Bartolomé Cuahuixmatlac</li>
+                    <li>Guadalupe Ixcotla</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">Contla de Juan Cuamatzí</div>
+            <div class="card-body">
+                <ul class="ps-3 list-unstyled">
+                    <li>San Felipe Cuauhtenco</li>
+                    <li>Ocotlán Tepatlaxco</li>
+                    <li>Ixtlahuaca</li>
+                    <li>San José Aztatla</li>
+                    <li>La Luz (Barrio)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">Cuapiaxtla</div>
+            <div class="card-body">
+                <ul class="ps-3 list-unstyled">
+                    <li>NCP San Rafael Tepatlaxco</li>
+                    <li>Colonia El Valle</li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">El Carmen Tequexquitla</div>
+            <div class="card-body">
+                <ul class="ps-3 list-unstyled">
+                    <li>Temalacayucan</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">Españita</div>
+            <div class="card-body">
+                <ul class="ps-3 list-unstyled">
+                    <li>San Agustín</li>
+                    <li>La Constancia</li>
+                    <li>Miguel Aldama</li>
+                    <li>Barrio de Torres</li>
+                    <li>San Miguel El Piñón</li>
+                    <li>San Miguel Pipillola</li>
+                    <li>La Reforma</li>
+                    <li>La Magdalena Cuextotitla</li>
+                    <li>Francisco I. Madero Viejo</li>
+                    <li>Álvaro Obregón</li>
+                    <li>San Francisco Mitepec</li>
+                    <li>San Juan Mitepec</li>
+                    <li>Vicente Guerrero</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">Huamantla</div>
+            <div class="card-body">
+                <ul class="ps-3 list-unstyled">
+                    <li>Ranchería La Lima</li>
+                    <li>Colonia Lic. Mauro Angulo</li>
+                    <li>Col Agrícola Sn Martín Notario</li>
+                    <li>Col. San Francisco Notario</li>
+                    <li>San Diego Xalpatlahuaya</li>
+                    <li>Ranchería El Molino</li>
+                    <li>N.C.P. San José Teacalco</li>
+                    <li>Francisco I. Madero Tecoac</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">Hueyotlipan</div>
+            <div class="card-body">
+                <ul class="ps-3 list-unstyled">
+                    <li>El Carmen (Las Carrozas)</li>
+                    <li>San Antonio Techalote</li>
+                    <li>San Diego Recova</li>
+                    <li>San Andrés Cuaximala</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">Ixtacuixtla de Mariano M.</div>
+            <div class="card-body">
+                <ul class="ps-3 list-unstyled">
+                    <li>San Marcos Jilotepec</li>
+                    <li>Santa Justina Ecatepec</li>
+                    <li>San José Escandona</li>
+                    <li>Santiago Xochimilco</li>
+                    <li>San Cristóbal Oxtotlapanco</li>
+                    <li>San Juan Nepopualco</li>
+                    <li>Alpotzonga de Lira y Ortega</li>
+                    <li>La Caridad Cuaxonacayo</li>
+                    <li>Santa Rosa de Lima</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">Nanacamilpa de Mariano A.</div>
+            <div class="card-body">
+                <ul class="ps-3 list-unstyled">
+                    <li>Domingo Arenas</li>
+                    <li>Miguel Lira y Ortega</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">Nativitas</div>
+            <div class="card-body">
+                <ul class="ps-3 list-unstyled">
+                    <li>San Bernabé Capula</li>
+                    <li>San Miguel del Milagro</li>
+                    <li>San Vicente Xiloxochitla</li>
+                    <li>San Francisco Tenexyecac</li>
+                    <li>Santo Tomás La Concordia</li>
+                    <li>Guadalupe Victoria</li>
+                    <li>Jesús Tepactepec</li>
+                    <li>Santa María Nativitas</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">Panotla</div>
+            <div class="card-body">
+                <ul class="ps-3 list-unstyled">
+                    <li>San Mateo Huexoyucan</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">Benito Juárez</div>
+            <div class="card-body">
+                <ul class="ps-3 list-unstyled">
+                    <li>N.C.P. Álvaro Obregón</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">Santa Apolonia Teacalco</div>
+            <div class="card-body">
+                <ul class="ps-3 list-unstyled">
+                    <li>Santa Apolonia Teacalco</li>
+                    <li>San Antonio Teacalco</li>
+                    <li>Santa Elena Teacalco</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">Santa Cruz Tlaxcala</div>
+            <div class="card-body">
+                <ul class="ps-3 list-unstyled">
+                    <li>Centro de la población de Santa Cruz Tlaxcala</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">Tepeyanco</div>
+            <div class="card-body">
+                <ul class="ps-3 list-unstyled">
+                    <li>Las Águilas</li>
+                    <li>Colonia Guerrero</li>
+                    <li>Colonia Vacaciones</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">Terrenate</div>
+            <div class="card-body">
+                <ul class="ps-3 list-unstyled">
+                    <li>Colonia Los Ameles</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">Tetlatlahuca</div>
+            <div class="card-body">
+                <ul class="ps-3 list-unstyled">
+                    <li>Santa Ana Portales</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">Tlaxcala</div>
+            <div class="card-body">
+                <ul class="ps-3 list-unstyled">
+                    <li>San Diego Metepec</li>
+                    <li>San Sebastián Atlahapa</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header"></div>
+            <div class="card-body">
+                <ul class="ps-3 list-unstyled">
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">Tlaxco</div>
+            <div class="card-body">
+                <ul class="ps-3 list-unstyled">
+                    La Herradura
+                    Santiago Tecomalucan
+                    Diego Muñoz Camargo
+                    Guadalupe Huexotitla
+                    Maguey Cenizo
+                    Graciano Sánchez
+                    Las Vigas
+                    San Diego Quintanilla
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">Totolac</div>
+            <div class="card-body">
+                <ul class="ps-3 list-unstyled">
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header"></div>
+            <div class="card-body">
+                <ul class="ps-3 list-unstyled">
+                    <li>Santiago Tepeticpac</li>
+                    <li>La Trinidad Chimalpa</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">Xaltocan</div>
+            <div class="card-body">
+                <ul class="ps-3 list-unstyled">
+                    <li>San Simón Tlatlahuquitepec</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

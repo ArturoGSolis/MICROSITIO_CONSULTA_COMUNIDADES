@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!----------------------------------------------------------------HEAD-------------------------------------------------->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!---------------------------------------------------------MAPA----------------------------------------------------->
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/map.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/data.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/offline-exporting.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/accessibility.js"></script>
+
+
+    <!-- <link rel="stylesheet" href="mapa/style.css"> -->
+    <script src="mapa/script.js"></script>
+    <script src="mapa/tlaxcala_map.js"></script>
+
+    <!---------------------------------------------------------FIN MAPA-------------------------------------------------->
+    <title>Consulta Comunidades</title>
+</head>
+<!--------------------------------------------------------------FIN HEAD------------------------------------------------>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-example">
+
+    <!----------------------------------------------------------------GRECA SUPERIOR------------------------------------------->
+    <div>
+        <img src="assets/greca_horizontal.svg">
+    </div>
+
+    <!---------------------------------------------------------------FIN GRECA SUPERIOR--------------------------------------->
+
+    <!-------------------------------------------------------------BLOQUE SUPERIOR---------------------------------------->
+    <div class="container-fluid">
+
+        <div class="centrar-div">
+
+            <!----------------------------------------------------NAVBAR SUPERIOR ------------------------------------------------->
+            <nav class="mt-5">
+
+                <div class="row">
+
+                    <div class="col-5">
+                        <a href="https://www.itetlax.org.mx/ite2020/index.html">
+                            <img class="img-fluid icono_ite" src="assets/logoite.png" alt="logo ITE">
+                        </a>
+                    </div>
+
+                    <div class="col-7" style="align-items: right;">
+
+                        <div class="col-12">
+                            <h2 class="ite" style="text-align: right;">Instituto Tlaxcalteca de Elecciones</h2>
+                        </div>
+
+                        <div class="col-12">
+
+                            <img class="img-fluid icono_redes" src="assets/insta.svg" alt="Instagram">
+
+                            <a href="mailto:transparencia@itetlax.org.mx">
+                                <img class="img-fluid icono_redes" src="assets/mail.svg" alt="Mail">
+                            </a>
+
+                            <a href="https://www.youtube.com/channel/UCUBfUX_c54NfhhvZRzK0k1w" target="_blank">
+                                <img class="img-fluid icono_redes" src="assets/yt.svg" alt="Youtube">
+                            </a>
+
+                            <a href="https://twitter.com/ITETLAX/with_replies?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                                target="_blank">
+                                <img class="img-fluid icono_redes" src="assets/tw.svg" alt="Twitter">
+                            </a>
+
+                            <a href="https://www.facebook.com/InstitutoTlaxcaltecadeElecciones/" target="_blank">
+                                <img class="img-fluid icono_redes" src="assets/fb.svg" alt="Facebook">
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
+            <!-- ----------------------------------------------------FIN NAVBAR SUPERIOR-------------------------------------------->
+
+            <!--------------------------------------------------------------BANNER-------------------------------------------------->
+            <div class="col-12 row mt-5">
+                <img src="assets/muñeca.png">
+            </div>
+            <!-----------------------------------------------------------FIN DE BANNER---------------------------------------------->
+
+
+            <!----------------------------------------------------------NAVBAR NAVEGACION------------------------------------------->
+            <nav id="nav" class="barra_navegacion navbar navbar-expand-lg navbar-light">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+                        <li class="nav-item">
+                            <div class="shadow">
+                                <a class="botones nav-link" aria-current="page" href="#Acuerdos">Acuerdos y Anexos</a>
+                            </div>
+                        </li>
+
+
+
+                        <li class="nav-item">
+                            <div class="shadow">
+                                <a class="botones nav-link" href="#Versiones">Versiones Ciudadanas de documentos
+                                    aprobados</a>
+                            </div>
+                        </li>
+
+
+
+                        <li class="nav-item">
+                            <div class="shadow">
+                                <a class="botones nav-link" href="#Informacion">Información Relevante</a>
+                            </div>
+                        </li>
+
+
+
+                        <li class="nav-item">
+                            <div class="shadow">
+                                <a class="botones nav-link" href="#Infografias">Infografias</a>
+                            </div>
+                        </li>
+
+
+
+                        <li class="nav-item">
+                            <div class="shadow">
+                                <a class="botones nav-link" href="#Contacto">¿Donde contactarnos?</a>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+            </nav>
+
+            <!-------------------------------------------------------------FIN NAVBAR NAVEGACION------------------------------------------>
+
+
+            <!----------------------------------------------------------------PRESENTACION------------------------------------------------>
+            <div class="row mt-3">
+
+                <h1>PRESENTACIÓN</h1>
+                <div class="puntos mb-3"></div>
+
+                <div>
+
+                    <p class="lead">El Instituto Tlaxcalteca de Elecciones (ITE) desarrolla un proceso de consulta
+                        previa, libre e informada a las comunidades que eligen a la persona titular de su presidencia de
+                        comunidad mediante usos y costumbres, y a las indígenas del Estado, con la finalidad de conocer
+                        sus posicionamientos u opiniones sobre diferentes ejes temáticos referentes a normas, principios
+                        y criterios que conformaran el Reglamento de Asistencia Técnica, Jurídica y Logística que
+                        utilizará esta autoridad cuando las comunidades soliciten asistencia y/o apoyo para sus
+                        elecciones.
+
+                        En este sitio encontrarás información relacionada con este ejercicio que es inédito en su tipo
+                        en Tlaxcala.</p>
+                </div>
+
+                <div class="mb-4">
+
+                    <p class="lead" style="text-align: right; letter-spacing: 3pt; font-size: 90%;"><strong><b># ElTrabajoContinúa</b></strong></p>
+
+                </div>
+
+            </div>
+
+            <!--------------------------------------------------------------FIN DE PRESENTACION--------------------------------------------->
+        </div>
+    </div>
+
+    <!--------------------------------------------------------------FIN DE BLOQUE SUPERIOR----------------------------------->
+
+
+
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example"
+        tabindex="0">
+
+        <!------------------------------------------------------------BLOQUE DE ACUERDOS-------------------------------------->
+        <div class="container-fluid">
+
+            <div class="centrar-div">
+                <h1 id="Acuerdos">ACUERDOS</h1>
+                <div class="puntos mb-2"></div>
+
+                <div class="row">
+
+                    <div class="mt-3 mb-3 col-lg-6 col-sm-12">
+
+                        <div class="card titulo-a">
+                            ITE-CG 31/2022
+                        </div>
+
+                        <div class="card">
+
+                            <div class="card-body acuerdo">
+                                <p class="card-text text-acuerdo mt-2">ACUERDO DEL CONSEJO GENERAL DEL INSTITUTO
+                                    TLAXCALTECA
+                                    DE ELECCIONES, POR EL QUE SE DA CUMPLIMIENTO A LOS EFECTOS
+                                    2 Y 3 DE LA SENTENCIA DICTADA POR EL TRIBUNAL ELECTORAL DE
+                                    TLAXCALA DENTRO DEL EXPEDIENTE TET-JDC-30/2020 Y ACUMULADO
+                                    TET-JDC-32/2020; Y SE APRUEBA EL PROTOCOLO PARA EL PROCESO
+                                    DE CONSULTA PREVIA, LIBRE E INFORMADA A LAS COMUNIDADES
+                                    QUE NOMBREN A SUS AUTORIDADES CONFORME A SUS USOS Y
+                                    COSTUMBRES Y A LAS INDÍGENAS EN EL ESTADO DE TLAXCALA,
+                                    RESPECTO DEL “REGLAMENTO DE ASISTENCIA TÉCNICA, JURÍDICA
+                                    Y LOGÍSTICA A LAS COMUNIDADES QUE REALIZAN ELECCIONES DE
+                                    PRESIDENCIAS DE COMUNIDAD POR EL SISTEMA DE USOS Y COSTUMBRES”.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="mt-3 mb-3 col-lg-6 col-sm-12">
+
+                        <div class="card titulo-a">
+                            ITE-CG 34/2022
+                        </div>
+
+                        <div class="card">
+
+
+                            <div class="card-body acuerdo">
+
+                                <p class="card-text text-acuerdo mt-2">ACUERDO DEL CONSEJO GENERAL DEL INSTITUTO
+                                    TLAXCALTECA
+                                    DE ELECCIONES, POR EL QUE SE APRUEBA, EL PROTOCOLO DE
+                                    SEGURIDAD SANITARIA PARA EL PROCESO DE CONSULTA PREVIA
+                                    LIBRE E INFORMADA, QUE SE LLEVARA A CABO EN AQUELLAS
+                                    COMUNIDADES QUE ELIGEN AL TITULAR DE SU PRESIDENCIA DE
+                                    COMUNIDAD MEDIANTE EL SISTEMA DE USOS Y COSTUMBRES Y A
+                                    LAS INDÍGENAS, EN EL ESTADO DE TLAXCALA; Y EL MANUAL
+                                    OPERATIVO PARA EL DESARROLLO DE LAS REUNIONES O
+                                    ENCUENTROS ENTRE LOS ACTORES DE LA CONSULTA, DURANTE LA
+                                    FASE OPERATIVA DE ACUERDOS, DE ESTE INSTITUTO. <br><br><br>
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="mt-3 mb-3 col-lg-6 col-sm-12">
+
+                        <div class="card titulo-a">
+                            ITE-CG 31/2022
+                        </div>
+
+                        <div class="card">
+
+                            <div class="card-body acuerdo">
+                                <p class="anexo mt-2">ANEXO 1</p>
+                                <p class="card-text text-acuerdo">PROTOCOLO PARA EL PROCESO DE CONSULTA PREVIA, LIBRE E
+                                    INFORMADA A LAS COMUNIDADES QUE NOMBREN A SUS
+                                    AUTORIDADES CONFORME A SUS USOS Y COSTUMBRES Y A LAS
+                                    INDÍGENAS EN EL ESTADO DE TLAXCALA, RESPECTO DEL
+                                    “REGLAMENTO DE ASISTENCIA TÉCNICA, JURÍDICA Y LOGÍSTICA A
+                                    LAS COMUNIDADES QUE REALIZAN ELECCIONES DE PRESIDENCIAS
+                                    DE COMUNIDAD POR EL SISTEMA DE USOS Y COSTUMBRES”. <br></p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="mt-3 mb-3 col-lg-6 col-sm-12">
+
+                        <div class="card titulo-a">
+                            ITE-CG 34/2022
+                        </div>
+
+                        <div class="card">
+
+                            <div class="card-body acuerdo">
+                                <p class="anexo mt-2">ANEXO 1</p>
+                                <p class="card-text text-acuerdo">PROTOCOLO DE SEGURIDAD SANITARIA PARA EL PROCESO DE
+                                    CONSULTA PREVIA, LIBRE E INFORMADA A LAS COMUNIDADES
+                                    QUE NOMBREN A SUS AUTORIDADES CONFORME AL SISTEMA DE
+                                    USOS Y COSTUMBRES Y A LAS INDÍGENAS EN EL ESTADO DE
+                                    TLAXCALA, RESPECTO DEL “REGLAMENTO DE ASISTENCIA
+                                    TÉCNICA, JURÍDICA Y LOGÍSTICA A LAS COMUNIDADES QUE
+                                    REALIZAN ELECCIONES DE PRESIDENCIAS DE COMUNIDAD POR EL
+                                    SISTEMA DE USOS Y COSTUMBRES”
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-6">
+
+                    </div>
+
+                    <div class="mt-3 mb-3 col-lg-6 col-sm-12">
+
+                        <div class="card titulo-a">
+                            ITE-CG 34/2022
+                        </div>
+
+                        <div class="card">
+
+                            <div class="card-body acuerdo">
+                                <p class="anexo mt-2">ANEXO 1</p>
+                                <p class="card-text text-acuerdo">PROTOCOLO DE SEGURIDAD SANITARIA PARA EL PROCESO DE
+                                    CONSULTA PREVIA, LIBRE E INFORMADA A LAS COMUNIDADES
+                                    QUE NOMBREN A SUS AUTORIDADES CONFORME AL SISTEMA DE
+                                    USOS Y COSTUMBRES Y A LAS INDÍGENAS EN EL ESTADO DE
+                                    TLAXCALA, RESPECTO DEL “REGLAMENTO DE ASISTENCIA
+                                    TÉCNICA, JURÍDICA Y LOGÍSTICA A LAS COMUNIDADES QUE
+                                    REALIZAN ELECCIONES DE PRESIDENCIAS DE COMUNIDAD POR EL
+                                    SISTEMA DE USOS Y COSTUMBRES”
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-6">
+
+                    </div>
+
+                    <div class="mt-3 mb-3 col-lg-6 col-sm-12">
+
+                        <div class="card">
+
+                            <a href="https://www.tetlax.org.mx/wp-content/u-ploads/2022/02/Sentencia-TET-JDC-030-2020.pdf"
+                                target="_blank">
+                                <div class="card-body card-juicio">
+
+                                    <p class="card-text2">JUICIO DE PROTECCIÓN DE LOS</p>
+                                    <p class="card-text2">DERECHOS POLÍTICO </p>
+                                    <p class="card-text2">ELECTORALES DE LA CIUDADANÍA</p>
+                                    <div class="linea"></div>
+                                    <p class="card-text2" style="font-weight: bolder;"><b>
+                                            TET-JDC-030/2020 Y
+                                        </b></p>
+                                    <p class="card-text2" style="font-weight: bolder;"><b>
+                                            ACUMULADO TET-JDC-032/2020
+                                        </b></p>
+                                </div>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!---------------------------------------------------------FIN DE BLOQUE DE ACUERDOS--------------------------------->
+
+
+
+        <!-------------------------------------------------------BLOQUE DE VERSIONES CIUDADANAS------------------------------>
+
+        <div class="container-fluid" style="background-image: url(assets/fondo2.svg);">
+
+            <div class="centrar-div">
+                <br>
+                <h1 id="Versiones" style="color: white;">VERSIONES CIUDADANAS</h1>
+                <div class="puntos2 mb-5"></div>
+
+                <div>
+                    <a href="assets/01_ VERSIÓN CIUDADANA_ ACUERDO 31_001.jpg" target="_blank">
+                        <img class="infografia center" src="assets/01_ VERSIÓN CIUDADANA_ ACUERDO 31_001.jpg">
+                    </a>
+
+                </div>
+
+                <div>
+                    <a href="assets/02_ VERSIÓN CIUDADANA_ PROTOCOLO ACUERDO 31_001.jpg" target="_blank">
+                        <img class="infografia center" src="assets/02_ VERSIÓN CIUDADANA_ PROTOCOLO ACUERDO 31_001.jpg">
+                    </a>
+
+                </div>
+
+                <div>
+                    <a href="assets/04_ VERSIÓN CIUDADANA_ MANUAL OPERATIVO_001.jpg" target="_blank">
+                        <img class="infografia center" src="assets/04_ VERSIÓN CIUDADANA_ MANUAL OPERATIVO_001.jpg">
+                    </a>
+
+                </div>
+
+                <div>
+                    <a href="assets/03_ VERSIÓN CIUDADANA_ PROTOCOLO DE SEGURIDAD SANITARIA_001.jpg" target="_blank">
+                        <img class="infografia center"
+                            src="assets/03_ VERSIÓN CIUDADANA_ PROTOCOLO DE SEGURIDAD SANITARIA_001.jpg">
+                    </a>
+
+                </div>
+            </div>
+            <br>
+
+        </div>
+
+        <!----------------------------------------------------FIN DE BLOQUE DE VERSIONES CIUDADANAS-------------------------->
+
+
+        <!------------------------------------------------BLOQUE DE INFORMACION RELEVANTE E INFOGRAFIAS----------------------->
+        <div class="container-fluid">
+
+            <div class="centrar-div">
+                <br>
+                <h1 id="Informacion">INFORMACIÓN RELEVANTE</h1>
+                <div class="puntos mb-5"></div>
+
+                <div class="mb-5">
+
+                    <div id="mapa"></div>
+
+                    <div></div>
+
+                    <div class="lista_municipios">
+                        <div class="card">
+                            <div class="card-header">Atltzayanca</div>
+                            <div class="card-body">
+                                <ul class="ps-3 list-unstyled">
+                                    <li>Delicias</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">Atlangatepec</div>
+                            <div class="card-body">
+                                <ul class="ps-3 list-unstyled">
+                                    <li>Santa María Tepetzala</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">Calpulalpan</div>
+                            <div class="card-body">
+                                <ul class="ps-3 list-unstyled">
+                                    <li>Santa Isabel Mixtitlán</li>
+                                    <li>La Venta</li>
+                                    <li>San Antonio Mazapa</li>
+                                    <li>Gustavo Díaz Ordaz</li>
+                                    <li>La Soledad</li>
+                                    <li>Santiago Cuaula</li>
+                                    <li>San Felipe Sultepec</li>
+                                    <li>San Marcos Guaquilpan</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">Chiautempan</div>
+                            <div class="card-body">
+                                <ul class="ps-3 list-unstyled">
+                                    <li>Santa Cruz Tetela</li>
+                                    <li>San Pedro Tlalcuapan</li>
+                                    <li>San Pedro Muñoztla</li>
+                                    <li>San Pedro Xochiteotla</li>
+                                    <li>San Rafael Tepatlaxco</li>
+                                    <li>Colonia Tepetlapa</li>
+                                    <li>San Bartolomé Cuahuixmatlac</li>
+                                    <li>Guadalupe Ixcotla</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">Contla de Juan Cuamatzí</div>
+                            <div class="card-body">
+                                <ul class="ps-3 list-unstyled">
+                                    <li>San Felipe Cuauhtenco</li>
+                                    <li>Ocotlán Tepatlaxco</li>
+                                    <li>Ixtlahuaca</li>
+                                    <li>San José Aztatla</li>
+                                    <li>La Luz (Barrio)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">Cuapiaxtla</div>
+                            <div class="card-body">
+                                <ul class="ps-3 list-unstyled">
+                                    <li>NCP San Rafael Tepatlaxco</li>
+                                    <li>Colonia El Valle</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">El Carmen Tequexquitla</div>
+                            <div class="card-body">
+                                <ul class="ps-3 list-unstyled">
+                                    <li>Temalacayucan</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">Españita</div>
+                            <div class="card-body">
+                                <ul class="ps-3 list-unstyled">
+                                    <li>San Agustín</li>
+                                    <li>La Constancia</li>
+                                    <li>Miguel Aldama</li>
+                                    <li>Barrio de Torres</li>
+                                    <li>San Miguel El Piñón</li>
+                                    <li>San Miguel Pipillola</li>
+                                    <li>La Reforma</li>
+                                    <li>La Magdalena Cuextotitla</li>
+                                    <li>Francisco I. Madero Viejo</li>
+                                    <li>Álvaro Obregón</li>
+                                    <li>San Francisco Mitepec</li>
+                                    <li>San Juan Mitepec</li>
+                                    <li>Vicente Guerrero</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">Huamantla</div>
+                            <div class="card-body">
+                                <ul class="ps-3 list-unstyled">
+                                    <li>Ranchería La Lima</li>
+                                    <li>Colonia Lic. Mauro Angulo</li>
+                                    <li>Col Agrícola Sn Martín Notario</li>
+                                    <li>Col. San Francisco Notario</li>
+                                    <li>San Diego Xalpatlahuaya</li>
+                                    <li>Ranchería El Molino</li>
+                                    <li>N.C.P. San José Teacalco</li>
+                                    <li>Francisco I. Madero Tecoac</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">Hueyotlipan</div>
+                            <div class="card-body">
+                                <ul class="ps-3 list-unstyled">
+                                    <li>El Carmen (Las Carrozas)</li>
+                                    <li>San Antonio Techalote</li>
+                                    <li>San Diego Recova</li>
+                                    <li>San Andrés Cuaximala</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">Ixtacuixtla de Mariano M.</div>
+                            <div class="card-body">
+                                <ul class="ps-3 list-unstyled">
+                                    <li>San Marcos Jilotepec</li>
+                                    <li>Santa Justina Ecatepec</li>
+                                    <li>San José Escandona</li>
+                                    <li>Santiago Xochimilco</li>
+                                    <li>San Cristóbal Oxtotlapanco</li>
+                                    <li>San Juan Nepopualco</li>
+                                    <li>Alpotzonga de Lira y Ortega</li>
+                                    <li>La Caridad Cuaxonacayo</li>
+                                    <li>Santa Rosa de Lima</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">Nanacamilpa de Mariano A.</div>
+                            <div class="card-body">
+                                <ul class="ps-3 list-unstyled">
+                                    <li>Domingo Arenas</li>
+                                    <li>Miguel Lira y Ortega</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">Nativitas</div>
+                            <div class="card-body">
+                                <ul class="ps-3 list-unstyled">
+                                    <li>San Bernabé Capula</li>
+                                    <li>San Miguel del Milagro</li>
+                                    <li>San Vicente Xiloxochitla</li>
+                                    <li>San Francisco Tenexyecac</li>
+                                    <li>Santo Tomás La Concordia</li>
+                                    <li>Guadalupe Victoria</li>
+                                    <li>Jesús Tepactepec</li>
+                                    <li>Santa María Nativitas</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">Panotla</div>
+                            <div class="card-body">
+                                <ul class="ps-3 list-unstyled">
+                                    <li>San Mateo Huexoyucan</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">Benito Juárez</div>
+                            <div class="card-body">
+                                <ul class="ps-3 list-unstyled">
+                                    <li>N.C.P. Álvaro Obregón</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">Santa Apolonia Teacalco</div>
+                            <div class="card-body">
+                                <ul class="ps-3 list-unstyled">
+                                    <li>Santa Apolonia Teacalco</li>
+                                    <li>San Antonio Teacalco</li>
+                                    <li>Santa Elena Teacalco</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">Santa Cruz Tlaxcala</div>
+                            <div class="card-body">
+                                <ul class="ps-3 list-unstyled">
+                                    <li>Centro de la población de Santa Cruz Tlaxcala</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">Tepeyanco</div>
+                            <div class="card-body">
+                                <ul class="ps-3 list-unstyled">
+                                    <li>Las Águilas</li>
+                                    <li>Colonia Guerrero</li>
+                                    <li>Colonia Vacaciones</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">Terrenate</div>
+                            <div class="card-body">
+                                <ul class="ps-3 list-unstyled">
+                                    <li>Colonia Los Ameles</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">Tetlatlahuca</div>
+                            <div class="card-body">
+                                <ul class="ps-3 list-unstyled">
+                                    <li>Santa Ana Portales</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">Tlaxcala</div>
+                            <div class="card-body">
+                                <ul class="ps-3 list-unstyled">
+                                    <li>San Diego Metepec</li>
+                                    <li>San Sebastián Atlahapa</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header"></div>
+                            <div class="card-body">
+                                <ul class="ps-3 list-unstyled">
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">Tlaxco</div>
+                            <div class="card-body">
+                                <ul class="ps-3 list-unstyled">
+                                    La Herradura
+                                    Santiago Tecomalucan
+                                    Diego Muñoz Camargo
+                                    Guadalupe Huexotitla
+                                    Maguey Cenizo
+                                    Graciano Sánchez
+                                    Las Vigas
+                                    San Diego Quintanilla
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">Totolac</div>
+                            <div class="card-body">
+                                <ul class="ps-3 list-unstyled">
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header"></div>
+                            <div class="card-body">
+                                <ul class="ps-3 list-unstyled">
+                                    <li>Santiago Tepeticpac</li>
+                                    <li>La Trinidad Chimalpa</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">Xaltocan</div>
+                            <div class="card-body">
+                                <ul class="ps-3 list-unstyled">
+                                    <li>San Simón Tlatlahuquitepec</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row box-cat">
+
+
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="card card-catalogo">
+                                <a href="http://itetlax.org.mx/PDF/Doc_Publicos/CATALOGO%20DE%20PRESIDENCIAS%20DE%20COMUNIDAD_final.pdf"
+                                    target="_blank">
+                                    <div class="card-body">
+
+                                        <p class="card-text2">Catálogo de Presidencias de Comunidad que realizan
+                                            elecciones mediante el sistema de usos y costumbres</p>
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                
+
+                <h1 id="Infografias">INFOGRAFIAS</h1>
+                <div class="puntos mb-5"></div>
+
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12">
+
+                        <a href="assets/INFOGRAFÍAS CAMPAÑA 2_Mesa de trabajo 1.jpg" target="_blank">
+                            <img class="infografia2 center" src="assets/INFOGRAFÍAS CAMPAÑA 2_Mesa de trabajo 1.jpg">
+                        </a>
+
+                    </div>
+
+                    <div class="col-lg-6 col-sm-12">
+
+                        <a href="assets/INFOGRAFÍAS CAMPAÑA 2_Mesa de trabajo 1 copia 2.jpg" target="_blank">
+                            <img class="infografia2 center"
+                                src="assets/INFOGRAFÍAS CAMPAÑA 2_Mesa de trabajo 1 copia 2.jpg">
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-----------------------------------------------FIN DE BLOQUE DE INFORMACION RELEVANTE E INFOGRAFIAS----------------->
+
+
+        <!-------------------------------------------------------------BLOQUE DE CONTACTO------------------------------------->
+        <div class="container-fluid bg-white">
+
+            <div class="centrar-div">
+                <br>
+                <h1 id="Contacto">¿DONDE CONTACTARNOS?</h1>
+
+                <div class="puntos mb-3"></div>
+
+                <div class="row">
+
+                    <div class="col-lg-6 col-sm-12 card">
+
+                        <img class="dialogo" src="assets/dialogo.svg">
+
+                        <p class="ali-de-in"><b>www.itetlax.org.mx <br>
+                                secretaria@itetlax.org.mx <br>
+                                246 46 5 03 40 EXT 202 <br>
+                                Ex-Fábrica San Manuel S/N <br>
+                                Barrio Nuevo, C.P. 90640 San Miguel <br>
+                                Contla, Santa Cruz Tlaxcala, Tlax.</b>
+
+                        </p>
+
+                        <div class="v-line"></div>
+
+                    </div>
+
+                    <div class="col-lg-6 col-sm-12 card">
+                        <br>
+                        <div class="mt-3 car-text" >
+                            
+                            <h2 style="color: #ce788e;"><strong><b>Comisión Temporal de Consulta</b></strong></h2>
+
+                            <p class="mt-4" style="color: black; font-size: 100%;"><b>Presidencia: <br>
+                                    <span style="color: #c1385f;">Consejera Electoral Lic. Yedith Martínez
+                                        Pinillo</b></span>
+                            </p>
+
+
+                            <p style="color: black; font-size: 100%;">Vocalías:<br>
+                                <span style="color: #c1385f; font-size: 100%;"><b>Consejera Electoral Lic. Janet Cervantes Ahuatzi <br>
+                                        Consejero Electoral Lic. Hermenegildo Neria Carreño</b></span>
+                            </p>
+
+                            <p style="color: black; font-size: 100%;">Secretaría Técnica:<br>
+                                <span style="color: #c1385f; font-size: 100%;"><b>Titular de la Dirección de Asuntos Jurídicos</b></span>
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="mt-5">
+                        <p class="lead">
+                            La Comisión Temporal de Consulta, supervisará las actividades de los órganos ejecutivos y de
+                            las áreas técnicas del Instituto
+                            que sean de su competencia en la materia de consulta a los pueblos y comunidades indígenas y
+                            de comunidades que elijan
+                            a sus autoridades por el sistema de usos y costumbres, además que de ser el caso conocerá,
+                            analizará, discutirá, emitirá y
+                            aprobará los dictámenes, proyectos de acuerdo o de resolución que deban ser presentados al
+                            Consejo General,23 las demás
+                            que deriven de lo determinado en el Reglamento de Comisiones y en el Reglamento Interior,
+                            ambos del Instituto Tlaxcalteca
+                            de Elecciones, y las que resultaran aplicables.
+
+                        </p>
+
+
+                    </div>
+
+                    <div class="flex-container mb-5 mt-5">
+
+
+
+                        <a href="https://www.facebook.com/InstitutoTlaxcaltecadeElecciones/" target="_blank">
+                            <img class="img-fluid icono_redes_infe" src="assets/fb.svg" alt="Facebook">
+                        </a>
+
+                        <a href="https://twitter.com/ITETLAX/with_replies?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                            target="_blank">
+                            <img class="img-fluid icono_redes_infe" src="assets/tw.svg" alt="Twitter">
+                        </a>
+
+                        <a href="https://www.youtube.com/channel/UCUBfUX_c54NfhhvZRzK0k1w" target="_blank">
+                            <img class="img-fluid icono_redes_infe" src="assets/yt.svg" alt="Youtube">
+                        </a>
+
+                        <a href="mailto:transparencia@itetlax.org.mx">
+                            <img class="img-fluid icono_redes_infe" src="assets/mail.svg" alt="Mail">
+                        </a>
+
+                        <img class="img-fluid icono_redes_infe" src="assets/insta.svg" alt="Instagram">
+
+
+
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <button class="btn-scrolltop" id="btn_scrolltop">
+                <i class="fas fa-chevron-up"></i>
+            </button>
+
+            
+            <script>
+                const btn_scrolltop = document.getElementById("btn_scrolltop")
+                btn_scrolltop.addEventListener('click', () => {
+                    window.scrollTo(0, 0)
+                })
+
+                window.onscroll = () => {
+                    add_btn_scrolltop()
+                }
+
+                const add_btn_scrolltop = () => {
+                    if (window.scrollY < 300) {
+                        btn_scrolltop.classList.remove("btn-scrolltop-on")
+                    } else {
+                        btn_scrolltop.classList.add("btn-scrolltop-on")
+                    }
+                }
+            </script>
+
+
+
+            <footer>
+
+                <div>
+                    <img src="assets/greca_horizontal.svg">
+                </div>
+            </footer>
+
+        </div>
+
+        <!-----------------------------------------------------------FIN DE BLOQUE DE CONTACTO-------------------------------->
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous">
+
+    
+    </script>
+    
+
+
+</body>
+
+</html>
