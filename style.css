@@ -22,11 +22,17 @@ p {
     text-align: justify;
 }
 
-.barra_navegacion {
+/* .barra_navegacion {
     display: flex;
     position: sticky;
     top: -1px;
-}
+} */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+  }
 
 .icono_ite {
     float: center;
