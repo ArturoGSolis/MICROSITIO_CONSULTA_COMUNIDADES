@@ -356,7 +356,7 @@ dataMapa = [
   {
     id: "010",
     comunidades:
-      "<tr><td>Tepetlapa Río de los Negros</td></tr><tr><td>Guadalupe Ixcotla</td></tr><tr><td>Colonia Guerrero</td></tr><tr><td>San Pedro Muñoztla</td></tr><tr><td>San Pedro Tlalcuapan</td></tr><tr><td>San Pedro Xochiteotla</td></tr><tr><td>San Rafael Tepatlaxco</td></tr><tr><td>Santa Cruz Tetela</td></tr>",
+      "<tr><td>Tepetlapa Río de los Negros</td></tr><tr><td>Guadalupe Ixcotla</td></tr><tr><td>San Bartolomé Cuahuixmatlac</td></tr><tr><td>San Pedro Muñoztla</td></tr><tr><td>San Pedro Tlalcuapan</td></tr><tr><td>San Pedro Xochiteotla</td></tr><tr><td>San Rafael Tepatlaxco</td></tr><tr><td>Santa Cruz Tetela</td></tr>",
     y: "010",
   },
   {
@@ -374,7 +374,7 @@ dataMapa = [
   {
     id: "013",
     comunidades:
-      "<tr><td>Colonia Agrícola San Martín Notario</td></tr><tr><td>Colonia San Francisco Notario</td></tr><tr><td>Colonia Lic. Mauro Angulo</td></tr><tr><td>Colonia Francisco I. Madero Tecoac</td></tr><tr><td>Colonia Nuevo San José Teacalco</td></tr><tr><td>Colonia Los Ámeles</td></tr><tr><td>Ranchería La Lima</td></tr><tr><td>Colonia San Diego Xalpatlahuaya</td></tr>",
+      "<tr><td>Colonia Agrícola San Martín Notario</td></tr><tr><td>Colonia San Francisco Notario</td></tr><tr><td>Colonia Lic. Mauro Angulo</td></tr><tr><td>Colonia Francisco I. Madero Tecoac</td></tr><tr><td>Colonia Nuevo San José Teacalco</td></tr><tr><td>Ranchería El Molino</td></tr><tr><td>Ranchería La Lima</td></tr><tr><td>Colonia San Diego Xalpatlahuaya</td></tr>",
     y: "013",
   },
   {
