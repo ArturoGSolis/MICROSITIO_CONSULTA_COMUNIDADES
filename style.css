@@ -1,111 +1,114 @@
 body {
     position: relative;
     background-color: #fce9f3;
-}
-
-a:link,
-a:visited,
-a:active {
+  }
+  
+  a:link,
+  a:visited,
+  a:active {
     text-decoration: none;
-}
-
-h1,
-h2 {
+  }
+  
+  h1,
+  h2 {
     color: #c13a67;
     font-weight: lighter;
-}
-
-p {
+  }
+  
+  p {
     color: #c13a67;
     font-size: 1vw;
     /* font-weight: bold; */
     text-align: justify;
-}
-
-/* .barra_navegacion {
-    display: flex;
-    position: sticky;
-    top: -1px;
-} */
-.sticky {
+  }
+  
+  /* .barra_navegacion {
+      display: flex;
+      position: sticky;
+      top: -1px;
+  } */
+  .sticky {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 5;
   }
-
-.icono_ite {
+  
+  .icono_ite {
     float: center;
     max-width: 17vw;
     max-height: 17vh;
-}
-
-.icono_redes {
+  }
+  
+  .icono_redes {
     float: right;
     max-width: 6vw;
     max-height: 6vh;
-    padding-left: .5vw;
-}
-
-.icono_redes_infe {
-
+    padding-left: 0.5vw;
+  }
+  
+  .icono_redes_infe {
     max-width: 6.5vw;
     max-height: 6.5vh;
-    padding-left: .5vw;
-}
-
-.ite {
+    padding-left: 0.5vw;
+  }
+  
+  .ite {
     font-size: 2vw;
-
-}
-
-.infografia {
+  }
+  
+  .infografia {
     margin-bottom: 5%;
     max-width: 80%;
     max-height: 80%;
     box-shadow: rgba(0, 0, 0, 0.15) 20px 20px 20px;
-}
-
-.infografia2 {
+  }
+  
+  .infografia2 {
     margin-bottom: 10%;
     max-width: 50vw;
     max-height: 50vh;
     box-shadow: rgba(0, 0, 0, 0.15) 20px 20px 20px;
-}
-
-.shadow {
+  }
+  
+  .shadow {
     margin-right: 1vw;
     box-shadow: 8px 10px 10px 1px rgba(0, 0, 0, 0.5) !important;
     border-radius: 5px;
-}
-
-.puntos {
+  }
+  
+  .puntos {
     border-bottom-style: dotted;
     border-bottom-width: 7px;
     color: #ce788e;
-}
-
-.puntos2 {
+  }
+  
+  .puntos2 {
     border-bottom-style: dotted;
     border-bottom-width: 7px;
     color: #e7bfc9;
-}
-
-.center {
+  }
+  
+  .center {
     margin-left: auto;
     margin-right: auto;
     display: block;
-}
-
-.acuerdo {
-
+  }
+  
+  .acuerdo {
     height: 100%;
-    background-color: #ce788e;
+    background-color: #c55e78;
+  
     border-radius: 15px;
-}
-
-.titulo-a {
+  }
+  /* 
+  .card-body .acuerdo {
+    background-color: #b06b7c;
+  } */
+  
+  .titulo-a {
     /* font-size:100%; */
+    font-size: 19px;
     border-radius: 15px;
     background-color: #c13a67;
     color: white;
@@ -115,108 +118,103 @@ p {
     position: relative;
     top: 15px;
     z-index: 1;
-}
-
-.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card {
     border-radius: 15px;
     border: none;
-}
-
-.card-juicio {
-
+  }
+  
+  .card-juicio {
     height: 50%;
     background-color: #c13a67;
     border-radius: 15px;
     color: white;
-}
-
-.box-cat {
+  }
+  
+  .box-cat {
     display: flex;
     flex-direction: row-reverse;
-
-}
-
-.card-text2 {
-
+  }
+  
+  .card-text2 {
     font-size: 100%;
     text-align: center;
     color: white;
     font-weight: lighter;
     margin-bottom: 0;
-}
-
-.linea {
+  }
+  
+  .linea {
     border-top: 1px solid white;
     height: 2px;
     padding: 0;
     margin: 20px auto 0 auto;
-}
-
-.ali-de-in {
+  }
+  
+  .ali-de-in {
     text-align: right;
     margin-top: 50%;
     color: #808085;
     font-size: 100%;
-}
-
-.cen-red {
+  }
+  
+  .cen-red {
     display: flex;
     justify-content: center;
-}
-
-.tamaño {
+  }
+  
+  .tamaño {
     width: 60vw;
     margin-left: auto;
     margin-right: auto;
-
-}
-
-.container-img {
+  }
+  
+  .container-img {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.centrar-div {
-
+  }
+  
+  .centrar-div {
     margin-left: auto;
     margin-right: auto;
     width: 60vw;
-}
-
-.flex-container {
-
+  }
+  
+  .flex-container {
     text-align: center;
-}
-
-
-
-/* ESTILOS DE MAPA */
-#mapa {
+  }
+  
+  /* ESTILOS DE MAPA */
+  #mapa {
     width: 100%;
     /* height: 100vh; */
-}
-
-.highcharts-tooltip tbody tr:nth-child(odd) {
+  }
+  
+  .highcharts-tooltip tbody tr:nth-child(odd) {
     background-color: #8a8a8a;
     color: #ffffff;
-}
-
-.highcharts-tooltip tbody tr:nth-child(even) {
+  }
+  
+  .highcharts-tooltip tbody tr:nth-child(even) {
     background-color: #ffffff;
-}
-
-.highcharts-tooltip tbody tr td {
+  }
+  
+  .highcharts-tooltip tbody tr td {
     padding: 5px 10px;
-}
-
-.highcharts-tooltip th {
+  }
+  
+  .highcharts-tooltip th {
     letter-spacing: 10px;
     word-spacing: 8px;
     border-bottom: 2px solid #5c5c5c;
-}
-
-.lista_municipios {
+  }
+  
+  .lista_municipios {
     margin: 1rem auto;
     width: 100%;
     padding: 0 20px 20px;
@@ -225,60 +223,59 @@ p {
     -moz-column-gap: 20px;
     -webkit-column-gap: 20px;
     column-gap: 20px;
-}
-
-.lista_municipios .card {
+  }
+  
+  .lista_municipios .card {
     margin: 0 0 -10px 0;
     max-width: 100%;
     break-inside: avoid;
     page-break-inside: avoid;
     background-color: rgba(255, 255, 255, 0);
     border-color: rgba(255, 255, 255, 0);
-}
-
-.lista_municipios .card .card-header {
+  }
+  
+  .lista_municipios .card .card-header {
     font-weight: bolder;
     color: #d06baf;
     letter-spacing: 2px;
     word-spacing: 3px;
     background-color: rgba(255, 255, 255, 0);
     border-color: rgba(255, 255, 255, 0);
-}
-
-.lista_municipios .card .card-body {
+  }
+  
+  .lista_municipios .card .card-body {
     color: #000000;
     padding: 0;
-}
-
-.lista_municipios .card .card-body ul {
+  }
+  
+  .lista_municipios .card .card-body ul {
     margin-top: -10px !important;
-}
-
-.tableHighcharts thead {
+  }
+  
+  .tableHighcharts thead {
     background-color: #000000;
     color: #ffffff;
-}
-
-.tableHighcharts tbody tr:nth-child(odd) {
+  }
+  
+  .tableHighcharts tbody tr:nth-child(odd) {
     background-color: #8a8a8a;
     color: #ffffff;
     padding: 5px 100px;
-}
-
-.tableHighcharts tbody tr:nth-child(even) {
+  }
+  
+  .tableHighcharts tbody tr:nth-child(even) {
     background-color: #ffffff;
     padding: 5px 100px;
-}
-
-/* FIN DE ESTILOS DE MAPA */
-
-
-/* BOTON UP */
-.btn-scrolltop {
+  }
+  
+  /* FIN DE ESTILOS DE MAPA */
+  
+  /* BOTON UP */
+  .btn-scrolltop {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 15px 20px;
+    bottom: 53px;
+    right: 15px;
+    padding: 10px 15px;
     background: #d06baf;
     color: white;
     border: 1px solid #d06baf;
@@ -286,200 +283,209 @@ p {
     cursor: pointer;
     transform: translateY(100px);
     transition: 0.3s;
-}
-
-.btn-scrolltop-on {
+  }
+  
+  .btn-scrolltop-on {
     transform: translateY(0);
-}
-
-/* FIN BOTON UP */
-
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+  }
+  
+  /* FIN BOTON UP */
+  
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
     .lista_municipios {
-        column-count: 2;
-        -moz-column-gap: 10px;
-        -webkit-column-gap: 10px;
-        column-gap: 10px;
+      column-count: 2;
+      -moz-column-gap: 10px;
+      -webkit-column-gap: 10px;
+      column-gap: 10px;
     }
-
+  
     .botones {
-        max-width: 100%;
-        background-color: #ce788e;
-        font-size: .95vw;
-        text-align: center;
-        vertical-align: middle;
-        color: white !important;
-        height: 10.5vh;
-        width: 11VW;
-        border-radius: 5px;
+      max-width: 100%;
+      background-color: #ce788e;
+      font-size: 1.1vw;
+      font-weight: bold;
+      /* font-size: 12px; */
+      text-align: center;
+      vertical-align: middle;
+      color: white !important;
+      font-weight: bolder;
+      height: 14vh;
+      width: 11vw;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
-
+  
     .text-acuerdo {
-        font-size: 67%;
-        text-align: justify;
-        color: white;
-        font-weight: lighter;
-
+      font-size: 67%;
+      text-align: justify;
+      color: white;
+      font-weight: lighter;
     }
-
+  
     .anexo {
-        background-color: #e8a6b9;
-        color: white;
-        width: 100%;
-        height: 4.5vh;
-        text-align: center;
-        font-size: 100%;
+      background-color: #e8a6b9;
+      color: white;
+      width: 100%;
+      height: 4.5vh;
+      text-align: center;
+      font-size: 100%;
     }
-
+  
     .card-catalogo {
-
-        /* height: 10vh; */
-        /* width: 30vw; */
-        background-color: #c13a67;
-        border-radius: 15px 15px 15px 15px;
-        color: white;
+      /* height: 10vh; */
+      /* width: 30vw; */
+      background-color: #c13a67;
+      border-radius: 15px 15px 15px 15px;
+      color: white;
     }
-
+  
     .dialogo {
-        position: absolute;
-        width: 45%;
-        z-index: 1;
+      position: absolute;
+      width: 45%;
+      z-index: 1;
     }
-}
-
-@media screen and (max-width: 767px) {
-
+  }
+  
+  @media screen and (max-width: 767px) {
     /* Estilos mapas */
     .lista_municipios {
-        column-count: 1;
-        -moz-column-gap: 10px;
-        -webkit-column-gap: 10px;
-        column-gap: 10px;
+      column-count: 1;
+      -moz-column-gap: 10px;
+      -webkit-column-gap: 10px;
+      column-gap: 10px;
     }
-
+  
     .labelHighcharts,
     .tableHighcharts thead,
     .tableHighcharts tbody tr:nth-child(odd),
     .tableHighcharts tbody tr:nth-child(even) {
-        background-color: rgba(255, 255, 255, 0);
-        color: rgba(255, 255, 255, 0);
+      background-color: rgba(255, 255, 255, 0);
+      color: rgba(255, 255, 255, 0);
     }
-
+  
     .tooltipHighcharts {
-        font-size: 12px;
+      font-size: 12px;
     }
-
+  
     .highcharts-tooltip tbody tr td {
-        padding: 1px 1px;
-        font-size: 12px;
+      padding: 1px 1px;
+      font-size: 12px;
     }
-
+  
     .highcharts-tooltip th {
-        letter-spacing: 2px;
-        word-spacing: 1px;
-        font-size: 12px;
+      letter-spacing: 2px;
+      word-spacing: 1px;
+      font-size: 12px;
     }
-
+  
     /* Fin estilos mapa */
-
+  
     .botones {
-        max-width: 100%;
-        background-color: #ce788e;
-        text-align: center;
-        vertical-align: middle;
-        color: white !important;
-        border-radius: 5px;
-        border: 1px solid #d0d0d0;
+      max-width: 100%;
+      background-color: #ce788e;
+      text-align: center;
+      font-weight: bolder;
+      vertical-align: middle;
+      color: white !important;
+      border-radius: 5px;
+      border: 1px solid #d0d0d0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
-
+  
     .text-acuerdo {
-        font-size: 67%;
-        text-align: justify;
-        color: white;
-        font-weight: lighter;
-
+      font-size: 67%;
+      text-align: justify;
+      color: white;
+      font-weight: lighter;
     }
-
+  
     .anexo {
-        background-color: #e8a6b9;
-        color: white;
-        width: 100%;
-        height: 4.5vh;
-        text-align: center;
-        font-size: 100%;
+      background-color: #e8a6b9;
+      color: white;
+      width: 100%;
+      height: 4.5vh;
+      text-align: center;
+      font-size: 100%;
     }
-
+  
     .card-catalogo {
-        /* height: 10vh; */
-        /* width: 30vw; */
-        background-color: #c13a67;
-        border-radius: 15px 15px 15px 15px;
-        color: white;
+      /* height: 10vh; */
+      /* width: 30vw; */
+      background-color: #c13a67;
+      border-radius: 15px 15px 15px 15px;
+      color: white;
     }
-
+  
     .dialogo {
-        position: absolute;
-        width: 45%;
-        z-index: 1;
+      position: absolute;
+      width: 45%;
+      z-index: 1;
     }
-
-}
-
-@media (min-width: 1024px) {
+  }
+  
+  @media (min-width: 1024px) {
     .botones {
-        max-width: 100%;
-        background-color: #ce788e;
-        font-size: .95vw;
-        text-align: center;
-        vertical-align: middle;
-        color: white !important;
-        height: 10.5vh;
-        width: 11VW;
-        border-radius: 5px;
+      max-width: 100%;
+      background-color: #ce788e;
+      font-size: 1.1vw;
+      font-weight: bold;
+      /* font-size: 15px; */
+      text-align: center;
+      vertical-align: middle;
+      font-weight: bolder;
+      color: white !important;
+      height: 14vh;
+      width: 11vw;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
-
+  
     .text-acuerdo {
-        /* font-size: 100%; */
-        text-align: justify;
-        color: white;
-        font-weight: lighter;
-        line-height: 1.1vw;
+      /* font-size: 100%; */
+      text-align: justify;
+      color: white;
+      font-weight: lighter;
+      line-height: 1.1vw;
     }
-
+  
     .anexo {
-        background-color: #e8a6b9;
-        color: white;
-        width: 100%;
-        height: 4.5vh;
-        text-align: center;
-        /* font-size: 1.3vw; */
+      background-color: #e8a6b9;
+      color: white;
+      width: 100%;
+      height: 4.5vh;
+      text-align: center;
+      /* font-size: 1.3vw; */
     }
-
+  
     .card-catalogo {
-
-        /* height: 10vh; */
-        /* width: 30vw; */
-        background-color: #c13a67;
-        border-radius: 15px 0px 0px 15px;
-        color: white;
+      /* height: 10vh; */
+      /* width: 30vw; */
+      background-color: #c13a67;
+      border-radius: 15px 0px 0px 15px;
+      color: white;
     }
-
+  
     .dialogo {
-        top: 15%;
-        right: 40%;
-        position: absolute;
-        width: 45%;
-        height: 45%;
-        z-index: 1;
+      top: 15%;
+      right: 40%;
+      position: absolute;
+      width: 45%;
+      height: 45%;
+      z-index: 1;
     }
-
+  
     .v-line {
-        border-left: thick solid #b03357;
-        height: 94%;
-        left: 100%;
-        position: absolute;
-        z-index: 1;
+      border-left: thick solid #b03357;
+      height: 94%;
+      left: 100%;
+      position: absolute;
+      z-index: 1;
     }
-
-}
+  }
+  

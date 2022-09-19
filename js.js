@@ -18,7 +18,7 @@ function myFunction() {
         navbar.classList.remove("sticky");
     }
 
-    if (window.scrollY < 600) {
+    if (window.scrollY < 1000) {
         btn_scrolltop.classList.remove("btn-scrolltop-on")
     } else {
         btn_scrolltop.classList.add("btn-scrolltop-on")
