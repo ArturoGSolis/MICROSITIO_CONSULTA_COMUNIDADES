@@ -114,7 +114,7 @@ body {
   }
 }
 .bob-on-hover {
-  display: inline-block;
+  /* display: inline-block; */
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
@@ -597,7 +597,7 @@ body {
   
   /* FIN BOTON UP */
   
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
+  @media screen and (min-width: 768px) and (max-width: 991px) {
     .lista_municipios {
       column-count: 2;
       -moz-column-gap: 10px;
@@ -608,16 +608,12 @@ body {
     .botones {
       max-width: 100%;
       background-color: #ce788e;
-      font-size: 1.1vw;
-      font-weight: bold;
-      /* font-size: 12px; */
       text-align: center;
+      font-weight: bolder;
       vertical-align: middle;
       color: white !important;
-      font-weight: bolder;
-      height: 14vh;
-      width: 11vw;
       border-radius: 5px;
+      border: 1px solid #d0d0d0;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -733,7 +729,7 @@ body {
     }
   }
   
-  @media (min-width: 1024px) {
+  @media (min-width: 992px) {
     .botones {
       max-width: 100%;
       background-color: #ce788e;

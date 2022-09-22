@@ -12,7 +12,8 @@ btn_scrolltop.addEventListener('click', () => {
 })
 
 function myFunction() {
-    if (window.pageYOffset >= sticky) {
+    
+    if (window.pageYOffset >= 1000 && $(window).width() > 992) {
         navbar.classList.add("sticky")
     } else {
         navbar.classList.remove("sticky");
