@@ -414,7 +414,7 @@ body {
   
   .titulo-a {
     /* font-size:100%; */
-    font-size: 19px;
+    font-size: 100%;
     border-radius: 15px;
     background-color: #c13a67;
     color: white;
@@ -627,11 +627,14 @@ body {
     }
   
     .anexo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       background-color: #e8a6b9;
       color: white;
       width: 100%;
       height: 4.5vh;
-      text-align: center;
+      /* text-align: center; */
       font-size: 100%;
     }
   
@@ -706,11 +709,14 @@ body {
     }
   
     .anexo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       background-color: #e8a6b9;
       color: white;
       width: 100%;
       height: 4.5vh;
-      text-align: center;
+      /* text-align: center; */
       font-size: 100%;
     }
   
@@ -781,11 +787,14 @@ body {
     }
   
     .anexo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       background-color: #e8a6b9;
       color: white;
       width: 100%;
       height: 4.5vh;
-      text-align: center;
+      /* text-align: center; */
       /* font-size: 1.3vw; */
     }
   
