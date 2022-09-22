@@ -807,7 +807,7 @@ body {
     }
   
     .dialogo {
-      top: 15%;
+      top: 20px;
       right: 40%;
       position: absolute;
       width: 45%;
